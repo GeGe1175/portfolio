@@ -45,6 +45,8 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+  --welcome-color: black;
+  --moon-display: none;
 }
 
 @media screen and (min-width: 968px) {
@@ -70,6 +72,8 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --welcome-color: white;
+  --moon-display: inline;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -87,6 +91,56 @@ body.dark-theme {
 
 .change-theme:hover {
   color: var(--first-color);
+}
+
+.moon-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.moon-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.moon-section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #161c27, transparent);
+  z-index: 1000;
+}
+
+.moon-section img#moon {
+  display: var(--moon-display);
+  mix-blend-mode: screen;
+}
+
+.moon-section img#mountains_front {
+  z-index: 10;
+}
+
+#text {
+  position: absolute;
+  top: 100px;
+  right: -350px;
+  color: var(--welcome-color);
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
 }
 
 /*==================== BASE ====================*/
