@@ -820,6 +820,12 @@ img {
   justify-self: center;
 }
 
+.viewButton {
+  width: 100px;
+  justify-self: center;
+  margin-bottom: 3rem;
+}
+
 /*==================== TESTIMONIAL ====================*/
 .testimonial__data,
 .testimonial__header {
