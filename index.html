@@ -157,7 +157,7 @@
 
                 <div class="about__data">
                     <p class="about__description">Current student studying at UNSW. Enjoys being an integral part of
-                        societies to make positives impacts upon the community.
+                        societies to make positives impacts upon the student community.
                         <br />
                         <br />
                         Enjoys designing websites, investing and has a passion for sports🥊🏀🥇.
@@ -736,14 +736,19 @@
                         </div> -->
                     <div class="contact__content">
                         <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea name="" id="message-content" cols="0" rows="7" class="contact__input"></textarea>
                     </div>
 
                     <div>
-                        <a href="mailto:jeffery.ge1234@gmail.com" class="button button--flex">
+                        <a id='send message' href="mailto:jeffery.ge1234@gmail.com" class="button button--flex">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
                         </a>
+                        <script>
+                            document.getElementById('send message').addEventListener('click', () => {
+                                console.log(document.getElementById('message-content').value);
+                            })
+                        </script>
                     </div>
                 </form>
             </div>
