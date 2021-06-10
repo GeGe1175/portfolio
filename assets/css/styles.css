@@ -114,7 +114,7 @@ body.dark-theme {
   pointer-events: none;
 }
 
-.moon-section::before {
+/* .moon-section::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -122,7 +122,7 @@ body.dark-theme {
   height: 100px;
   background: linear-gradient(to top, #161c27, transparent);
   z-index: 1000;
-}
+} */
 
 .moon-section img#moon {
   display: var(--moon-display);
