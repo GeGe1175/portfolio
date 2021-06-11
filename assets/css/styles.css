@@ -599,6 +599,10 @@ img {
   width: 65%;
 }
 
+.skills__analytics {
+  width: 60%;
+}
+
 .skills__close .skills__list {
   height: 0px;
   overflow: hidden;
